@@ -1,3 +1,6 @@
+<?php
+//$nombre = "nes";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +10,24 @@
     <title>Home</title>
 </head>
 <body>
-    <h2>Empezamos</h2>
+    <h2>Empezamos {{$nombre . ' '. $apellido}}</h2><br>
+
+    <h3>Ciclo For: </h3>
+    @for ($i = 0; $i < count($nombres); $i++)
+        {{$nombres[$i]}}<br>
+    @endfor
+    <br>
+    <h3>Ciclo foreach</h3>
+    @foreach ($nombres as $item)
+        Hola bb: {{$item}}
+        <br>
+    @endforeach
+
+    {{--  @forelse ($collection as $item)
+        
+    @empty
+        
+    @endforelse  --}}
+
 </body>
 </html>

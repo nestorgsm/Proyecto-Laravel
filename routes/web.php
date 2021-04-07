@@ -18,6 +18,18 @@ Route::get('/', function () {
 });
 
 
-Route::get('home', function() {
-    return view("home");
-})->name("inicio");
+// Route::get('home/{nombre?}/{apellido?}', function($nombre = 'Amig@', $apellido = "Apellido") {
+//     //ejem 1
+//     // $name = "Nes";
+//     // return view("home")->with("nombre",$name);
+
+//     //ejem 2
+//     // return view("home")->with("nombre",$nombre)->with("apellido",$apellido);
+
+//     //ejemp 3
+//     $paraFor = ['Name1', 'Name2', 'Name3'];
+//     // $arr2 = ['Name1' => 'nestor', 'Name2' => 'juan', 'Name3' => 'Carlos'];
+//     $data = ['nombre' => $nombre, 'apellido' => $apellido, 'nombres' => $paraFor];
+//     return view("home", $data );
+
+// })->name("inicio");
